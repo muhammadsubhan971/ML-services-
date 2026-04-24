@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 
 RUN python -m pip install --upgrade pip setuptools wheel
-RUN pip install --only-binary=:all: -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . .
 
