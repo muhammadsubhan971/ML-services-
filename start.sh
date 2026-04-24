@@ -9,4 +9,4 @@ venv\Scripts\activate
 python -m pip install --upgrade pip
 
 # install deps
-pip install -r requirements.txt
+RUN pip install --only-binary=:all: -r requirements.txt
